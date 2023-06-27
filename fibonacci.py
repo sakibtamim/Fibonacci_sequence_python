@@ -1,8 +1,8 @@
 #using recursion
 
 def fibonacci(num):
-    if num == 0 or num == 1:
-        print(num)
+    if num <=1:
+       return num
     else:
-        print((num-1)+(num-2))
-fibonacci(8)
+        return fibonacci(num-1) + fibonacci(num-2)
+print(fibonacci(2))
